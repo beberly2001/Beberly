@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pinturas B&B</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="Imagenes/logo2.png">
+</head>
+
+<body>
+
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm px-5 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0">
+            <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-paint-roller text-secondary me-3"></i>Pinturas
+                B&B SRL</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0 pe-4 border-end border-5 border-primary">
+                <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                <a href="acerca de.html" class="nav-item nav-link">Aprende de colores</a>
+                <a href="servicios.html" class="nav-item nav-link">Servicios</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Páginas</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="Historia.html" class="dropdown-item">Historia</a>
+                        <a href="Galeria.html" class="dropdown-item">Galeria</a>
+                        <a href="Cotizacion.html" class="dropdown-item">Cotización</a>
+                        <a href="Autor.html" class="dropdown-item">Autor</a>
+                    </div>
+                </div>
+                <a href="contactenos.html" class="nav-item nav-link">Contáctenos</a>
+            </div>
+            <div class="d-none d-lg-flex align-items-center ps-4">
+                <i class="fa fa-2x fa-mobile-alt text-secondary me-3"></i>
+                <div>
+                    <h5 class="text-primary mb-1"><small>Llamar</small></h5>
+                    <h6 class="text-light m-0">+506 8735 6468</h6>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid bg-primary py-5 bg-hero" style="margin-bottom: 90px;">
+        <div class="container py-5">
+            <div class="row justify-content-start">
+                <div class="col-lg-8 text-center text-lg-start">
+                    <h1 class="display-1 text-dark">Cotice su trabajo acá</h1>
+                    <div class="pt-2">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+
+    <div id="CotizacionTerminada">
+        <hr>
+        <h1>Cotizar trabajo</h1>
+        <form>
+            <label>
+                <input type="radio" name="opcion" value="opcion1">
+                Cotizar con materiales
+            </label>
+
+            <label>
+                <input type="radio" name="opcion" value="opcion2">
+                Cotizar solo mano de obra
+            </label>
+        </form>
+
+        <div class="coti">
+            <div id="cotizacion" class="cotizacion-coti">
+
+                <div id="cotizacion">
+                    <fieldset>
+                        <legend>Lavado de techos</legend>
+                        <label for="">Metros</label>
+                        <input id="metrosTechos" type="text" value="0">
+                        <label for="">TOTAL</label>
+                        <input id="totalTechos" type="text" readonly>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Pintura de techos</legend>
+                        <label for="">Metros</label>
+                        <input id="metrosPinturaTechos" type="text" value="0">
+                        <label for="">TOTAL</label>
+                        <input id="totalPinturaTechos" type="text">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Pintura de interior</legend>
+                        <label for="">Metros</label>
+                        <input id="metrosInterior" type="text" value="0">
+                        <label for="">TOTAL</label>
+                        <input id="totalInterior" type="text">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Pintura de exterior</legend>
+                        <label for="">Metros</label>
+                        <input id="metrosExterior" type="text" value="0">
+                        <label for="">TOTAL</label>
+                        <input id="totalExterior" type="text">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Gran total de la cotización</legend>
+                        <label for="">TOTAL</label>
+                        <input id="total" type="text">
+                    </fieldset>
+
+                    <button onclick="Cotizar()">Cotizar</button>
+                </div>
+
+
+
+
+                <hr>
+
+
+            </div>
+
+
+        </div>
+    </div>
+        <div class="clima-coti">
+
+            <div class="container"
+                style="background-color: #fff; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); border-radius: 8px; width: 400px; padding: 20px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                <h1 style="color: #333; margin-bottom: 20px;">Consulta del Clima</h1>
+                <div class="input-container"
+                    style="display: flex; flex-direction: column; align-items: center; margin-bottom: 10px;">
+                    <input type="text" id="cityInput" placeholder="Ingrese el nombre de la ciudad..."
+                        style="font-size: 16px; margin: 5px 0; padding: 10px; border: 1px solid #ccc; border-radius: 4px; width: 100%; box-sizing: border-box;">
+                    <input type="date" id="dateInput"
+                        style="font-size: 16px; margin: 5px 0; padding: 10px; border: 1px solid #ccc; border-radius: 4px; width: 100%; box-sizing: border-box;">
+                </div>
+                <button id="searchButton"
+                    style="padding: 10px 20px; background-color: #1ea7dd; color: #fff; border: none; border-radius: 4px; cursor: pointer; transition: background-color 0.3s ease;">Consultar
+                    Clima</button>
+                <div id="weatherInfo" class="result-container"
+                    style="background-color: #fff; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); border-radius: 8px; padding: 20px; margin-top: 20px; display: flex; flex-direction: column; align-items: flex-start; text-align: left; width: 100%;">
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+    <!-- Footer Start -->
+    <div class="footer container-fluid position-relative bg-dark py-5" style="margin-top: 90px;">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-lg-6 pr-lg-5 mb-5">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="mb-3 text-white"><span class="text-primary">Pinturas B&B</span></h1>
+                    </a>
+                    <p class="text-white">Servicio de pintura</p>
+                    <p class="text-white"><i class="fa fa-map-marker-alt mr-2"></i>Limón, Guapiles</p>
+                    <p class="text-white"><i class="fa fa-phone-alt mr-2"></i>+8735 6468</p>
+                    <p class="text-white"><i class="fa fa-envelope mr-2"></i>mezabrayner6@gmail.com</p>
+                </div>
+                <div class="col-lg-6 pl-lg-5">
+                    <div class="row">
+                        <div class="col-sm-6 mb-5">
+                            <h5 class="text-white text-uppercase mb-4">Enlaces rápidos</h5>
+                            <div class="d-flex flex-column justify-content-start">
+                                <a class="text-white-50 mb-2" href="index.html"><i
+                                        class="fa fa-angle-right mr-2"></i>Inicio</a>
+                                <a class="text-white-50 mb-2" href="acerca de.html"><i
+                                        class="fa fa-angle-right mr-2"></i>Aprende de Colores</a>
+                                <a class="text-white-50 mb-2" href="servicios.html"><i
+                                        class="fa fa-angle-right mr-2"></i>Servicios</a>
+                                <a class="text-white-50" href="contactenos.html"><i
+                                        class="fa fa-angle-right mr-2"></i>Contactenos</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 mb-5">
+                            <div class="w-100">
+                                <img src="Imagenes/nosotros.jpeg" alt="Logo" class="img-fluid mb-3"
+                                    style="max-width: 100px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-light border-top py-4"
+        style="border-color: rgba(256, 256, 256, .15) !important;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+                    <p class="m-0 text-white">&copy; <a href="#" class="text-primary">Pinturas B&B SRL</a>. All Rights
+                        Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-right">
+                    <p class="m-0 text-white">Designed by <a href="#" class="text-primary">Beberly Cubillo Mendez</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-secondary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/metodos.js"></script>
+</body>
+
+</html>
